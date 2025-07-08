@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { Download, FileText, Calendar, Heart, Activity, Eye, Volume2, User, Stethoscope, Clipboard, AlertTriangle,  Droplets, Thermometer, Sparkles, History, Minus, Plus } from 'lucide-react';
+import { Download, FileText, Calendar, Heart, Activity, Eye, Volume2, User, Stethoscope, Clipboard, AlertTriangle,  Droplets, Thermometer, Sparkles, History } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { GlassCard } from '../components/ui/glass-card';
 import { useToast } from '../hooks/use-toast';
@@ -18,7 +18,7 @@ export function Report() {
   const { healthRecords, getLatestRecord } = useHealth();
   const [isGenerating, setIsGenerating] = useState(false);
   const [reportGenerated, setReportGenerated] = useState(false);
-  const [showAdvancedOptions, setShowAdvancedOptions] = useState(false);
+  const [showAdvancedOptions] = useState(false);
   const [isEnhancing, setIsEnhancing] = useState(false);
   const reportRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
@@ -392,23 +392,6 @@ export function Report() {
                 )}
               </Button>
 
-              <Button
-                variant="outline"
-                onClick={() => setShowAdvancedOptions(!showAdvancedOptions)}
-                className="w-full"
-              >
-                {showAdvancedOptions ? (
-                  <>
-                    <Minus className="h-4 w-4 mr-2" />
-                    Hide Advanced Options
-                  </>
-                ) : (
-                  <>
-                    <Plus className="h-4 w-4 mr-2" />
-                    Show Advanced Options
-                  </>
-                )}
-              </Button>
             </div>
           </GlassCard>
         ) : (
