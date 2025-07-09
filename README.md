@@ -8,7 +8,7 @@ CareLink AI is a real-time, AI-powered emergency assistant designed to help user
 
 ## 🌐 Live Preview
 
-🔗 [carelinkai.vercel.app](https://carelinkai.vercel.app)
+🔗 [carelinkai.vercel.app](https://carelink-ai.vercel.app)
 
 ---
 
