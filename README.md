@@ -44,7 +44,7 @@ CareLink AI is a real-time, AI-powered emergency assistant designed to help user
 | Frontend   | React.js, Tailwind CSS             |
 | AI Engine  | Gemini API (Google AI)             |
 | Voice Input| Web Speech API                     |
-| Animations | GSAP (GreenSock)                   |
+| Animations | Framer Motion                      |
 
 ---
 
